@@ -40,39 +40,41 @@
 
 </head>
 
-<body class="overflow-hidden">
+<body class=" overflow_hidden">
     <!-- Preloader-->
     <div id="preloder"
         class="vh-100 bg_color d-flex justify-content-center align-items-center  position-fixed top-0 start-0 w-100 z-4">
         <div class="preloder fw-bold ff_main text-white fs_2xl ">CLEAVE-MEDIA</div>
     </div>
-    <header class="overflow-hidden">
+    <header class=" bg_color overflow-hidden d-flex justify-content-center flex-column min-vh-100">
         <!-- nav -->
+
         <nav class="bg_nav_color">
             <div class="container my_container">
                 <div class="d-flex align-items-center justify-content-between py-3 ">
                     <img src="./assets/image/logo.png" alt="logo">
                     <div class="d-flex align-items-center gap-4 back_shadow">
-                        <label id="menuIcon">
+                        <label id="menuIcon" class="cross_3 cross-bg">
                             <span class="cross-4"></span>
                             <span class="cross-5"></span>
                             <span class="cross-6"></span>
                         </label>
                         <ul class="my_nav d-flex align-items-center nav_gap mb-0 pl-0 py-3 ml-0 px-0" Id="nav">
                             <img class="d-block d-lg-none" src="./assets/image/logo.png" alt="logo">
-                            <li onclick="navbar2()" class="border_bottom_nav"><a href="#Home"
+                            <li onclick="navbar2()" class="border_bottom_nav home"><a href="#Home"
                                     class="under_hover ">Home</a>
                             </li>
-                            <li onclick="navbar2()" class="border_bottom_nav"><a href="#About" class="under_hover">About
+                            <li onclick="navbar2()" class="border_bottom_nav home"><a href="#About"
+                                    class="under_hover">About
                                 </a>
                             </li>
-                            <li onclick="navbar2()" class="border_bottom_nav"><a href="#Servies"
+                            <li onclick="navbar2()" class="border_bottom_nav home"><a href="#Servies"
                                     class="under_hover">Services</a>
                             </li>
-                            <li onclick="navbar2()" class="border_bottom_nav"><a href="#Pricing"
+                            <li onclick="navbar2()" class="border_bottom_nav home"><a href="#Pricing"
                                     class="under_hover">Pricing</a>
                             </li>
-                            <li onclick="navbar2()" class="border_bottom_nav"><a href="#FAQ"
+                            <li onclick="navbar2()" class="border_bottom_nav home"><a href="#FAQ"
                                     class="under_hover me-lg-5">FAQ</a>
                             </li>
 
@@ -86,25 +88,28 @@
             </div>
         </nav>
         <div id="Home"
-            class="bg_color min-vh-100 d-flex align-items-center justify-content-center position-relative overflow-hidden z-2 ">
-            <div class="hero_ellips"><img class="w-100" src="./assets/image/hero_ellipse.png" alt="epplips"></div>
-            <div class="hero_blue"><img class="wh_ellipse" src="./assets/image/blue_slider_img.png" alt="blue"></div>
+            class="d-flex flex_grow   align-items-center justify-content-center position-relative overflow-hidden z-2 ">
+            <span class="hero_ellips"></span>
+            <div class="hero_blue"><img class="wh_ellipse" src="./assets/image/blue_slider_img.png" alt="blue">
+            </div>
             <div class="svg_red"><img class="wh_ellipse" src="./assets/image/hero_red.png" alt="hero"></div>
-            <div class="blob_hero"><img class="wh_ellipse" src="./assets/image/blob_hero.png" alt="hero_ellipse"></div>
+            <div class="blob_hero"><img class="wh_ellipse" src="./assets/image/blob_hero.png" alt="hero_ellipse">
+            </div>
             <div class="hero_green"> <img class="wh_ellipse" src="./assets/image/green_slider_img.png" alt="slider">
             </div>
             <div class="hero_fine"><img class="wh_ellipse" src="./assets/image/hero_fine.png" alt="cine"></div>
             <div class="hero_value"><img class="wh_ellipse" src="./assets/image/hero_value.png" alt="red"></div>
             <div class="hero_fine_ver"><img class="wh_ellipse" src="./assets/image/finel_version_hero.png" alt="hero">
             </div>
-            <div class="hero_scirbber"><img class="wh_ellipse" src="./assets/image/scrribe_hero.png" alt="hero"></div>
+            <div class="hero_scirbber"><img class="wh_ellipse" src="./assets/image/scrribe_hero.png" alt="hero">
+            </div>
             <div class="custom_container container text-center">
                 <h1 class="white fs_2xl fw-semibold ff_main mw_806 mx-auto text-center ">Our Agency Brings Your Vision
                     to Life
                 </h1>
-                <p class="mx-auto text-center white mw_730 ff_main fw-normal fs_sm pt-3">At Cleauv Media, we are all
-                    about creativity. Our team of experts specializes in delivering innovative solutions that capture
-                    the essence of your brand and bring it to life in new and exciting ways.</p>
+                <p class="mx-auto text-center white mw_730 ff_main fw-normal fs_sm pt-3 lh_150">At Cleauv Media, we are
+                    all about creativity. Our team of experts specializes in delivering innovative solutions that
+                    capture the essence of your brand and bring it to life in new and exciting ways.</p>
                 <button class="yellow_btn white  fs_sm fw-semibold ff_main">Contact Us</button>
             </div>
         </div>
@@ -127,30 +132,28 @@
         </div>
     </section>
     <!-- slider-two -->
-    <section class="overflow-hidden position-relative py-5 pb-5">
+    <section class="overflow-hidden position-relative py-5 pb-5 bg_accordion z-1">
         <div class="blue_slider"><img class="wh_ellipse" src="./assets/image/blue_slider_img.png" alt="green"></div>
         <div class="green_slider"><img class="wh_ellipse" src="./assets/image/green_slider_img.png" alt="blue"></div>
         <div class="blueb_slider"><img class="wh_ellipse" src="./assets/image/bul_bul_work.png" alt="blue"></div>
         <div class="slider_img"><img class="wh_ellipse" src="./assets/image/slider_img.png" alt="slider"></div>
-        <h2 class="mb-0 text-center pt-5 mt-sm-5 ff_main fw-semibold fs_xl">Relevant Works</h2>
-        <p class="mb-0 text-center pb-5 mw_697 mx-auto pt-3 ff_main fw-normal fs_sm">Our team has successfully
+        <h2 class="mb-0 text-center pt-5 mt-sm-5 ff_main fw-semibold fs_xl position-relative z-1">Relevant Works</h2>
+        <p class="mb-0 text-center pb-5 mw_697 mx-auto pt-3 ff_main fw-normal fs_sm lh_150">Our team has successfully
             collaborated with a diverse range of clients across various industries, providing innovative solutions that
             address their unique challenges.
         </p>
         <div class="container custom_container ">
-            <div class="row d-lg-none py-5 justify-content-center">
+            <div class="row d-lg-none py-5 justify-content-center ">
                 <div class="col-md-6 ">
-                    <div class=""><img class="rounded-5 w-100" src="./assets/image/relevent_work_main_img.png"
-                            alt="main">
+                    <div><img class="rounded_15 w-100" src="./assets/image/relevent_work_main_img.png" alt="main">
                     </div>
                 </div>
                 <div class="col-md-6 ">
-                    <div class=""><img class="rounded-5 w-100 pt-4 pt-sm-5 pt-md-0"
+                    <div class="pt-4 pt-sm-5 pt-md-0"><img class="rounded_15 w-100 "
                             src="./assets/image/relevent_work_primery_left_img.png" alt="main"></div>
                 </div>
                 <div class="col-md-6 pt-4 pt-sm-5 pt-lg-0 ">
-                    <div class=""><img class="rounded-5 w-100" src="./assets/image/relevent_work_primery_img.png"
-                            alt="main">
+                    <div><img class="rounded_15 w-100" src="./assets/image/relevent_work_primery_img.png" alt="main">
                     </div>
                 </div>
             </div>
@@ -195,92 +198,88 @@
                 redefine excellence, exceeding expectations every time.
             </p>
             <div class="row text-center text-sm-start pt-4">
-                <div class="col-lg-4  col-sm-6">
+                <div class="col-lg-4 mw_303 col-sm-6">
                     <div class="card_12">
-                        <p class="white mb-0 ff_main fw-semibold">Trade show banners</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Trade show banners</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Logos & branding</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Logos & branding</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Email graphics</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Email graphics</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Packaging</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Packaging</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Social media graphics</p>
+                        <p class="white mb-0 fs_md2 ff_main fw-semibold">Social media graphics</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Pitch decks</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Pitch decks</p>
                     </div>
                 </div>
                 <div class="col-lg-3  col-sm-6">
                     <div class="card_12">
-                        <p class="white mb-0 ff_main fw-semibold">Website</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Website</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Infographics</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Infographics</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Direct mail</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Direct mail</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Wireframes</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Wireframes</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Blog graphics</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Blog graphics</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Digital ads</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Digital ads</p>
                     </div>
                 </div>
                 <div class="col-lg-2  col-sm-6 pt-4 pt-lg-0">
                     <div class="card_12">
-                        <p class="white mb-0 ff_main fw-semibold">Slide decks</p>
-                    </div>
-
-                    <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Resumes</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Slide decks</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Brochures</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Resumes</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Signage</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Brochures</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Stationery</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Signage</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Billboards</p>
+                        <p class="white mb-0  fs_md2 ff_main fw-semibold">Stationery</p>
+                    </div>
+                    <div class="card_12 mt-4">
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Billboards</p>
                     </div>
                 </div>
-
                 <div class="col-lg-3  col-sm-6 pt-4 pt-lg-0">
-
                     <div class="card_12">
-                        <p class="white mb-0 ff_main fw-semibold">Mobile apps</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Mobile apps</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Design systems</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Design systems</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Business cards</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Business cards</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">SAAS</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">SAAS</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Brand guides</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Brand guides</p>
                     </div>
                     <div class="card_12 mt-4">
-                        <p class="white mb-0 ff_main fw-semibold">Icons</p>
+                        <p class="white mb-0 fs_md2  ff_main fw-semibold">Icons</p>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
     <!-- Pricing Plans -->
     <section id="Pricing" class="light_yellow_bg py-5 position-relative overflow-hidden z-2">
@@ -534,9 +533,10 @@
                     <div class="col-lg-9 col-12">
                         <p class="fs_lg ff_main mb-0 fw-semibold d-none d-lg-block ">Arlene McCoy</p>
                         <p class="ff_main fs_sm mb-0 fw-normal pb-1 d-none d-lg-block">CEO of Mind.ly</p>
-                        <p class="ff_main fs_sm mb-0 fw-normal pt-2">Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of classical Latin literature from 45 BC, making
-                            it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
+                        <p class="ff_main fs_sm mb-0 fw-normal pt-2 lh_150">Contrary to popular belief, Lorem Ipsum is
+                            not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                            College
                             in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                             passage, and going</p>
                     </div>
@@ -556,9 +556,10 @@
                     <div class="col-lg-9 col-12">
                         <p class="fs_lg ff_main mb-0 fw-semibold d-none d-lg-block ">Arlene McCoy</p>
                         <p class="ff_main fs_sm mb-0 fw-normal pb-1 d-none d-lg-block">CEO of Mind.ly</p>
-                        <p class="ff_main fs_sm mb-0 fw-normal pt-2">Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of classical Latin literature from 45 BC, making
-                            it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
+                        <p class="ff_main fs_sm mb-0 fw-normal pt-2 lh_150">Contrary to popular belief, Lorem Ipsum is
+                            not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                            College
                             in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                             passage, and going</p>
                     </div>
@@ -578,9 +579,10 @@
                     <div class="col-lg-9 col-12">
                         <p class="fs_lg ff_main mb-0 fw-semibold d-none d-lg-block ">Arlene McCoy</p>
                         <p class="ff_main fs_sm mb-0 fw-normal pb-1 d-none d-lg-block">CEO of Mind.ly</p>
-                        <p class="ff_main fs_sm mb-0 fw-normal pt-2">Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of classical Latin literature from 45 BC, making
-                            it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
+                        <p class="ff_main fs_sm mb-0 fw-normal pt-2 lh_150">Contrary to popular belief, Lorem Ipsum is
+                            not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                            College
                             in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                             passage, and going</p>
                     </div>
@@ -601,9 +603,10 @@
                     <div class="col-lg-9 col-12">
                         <p class="fs_lg ff_main mb-0 fw-semibold  d-lg-block d-none">Arlene McCoy</p>
                         <p class="ff_main fs_sm mb-0 fw-normal pb-1 d-lg-block d-none">CEO of Mind.ly</p>
-                        <p class="ff_main fs_sm mb-0 fw-normal pt-2">Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of classical Latin literature from 45 BC, making
-                            it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
+                        <p class="ff_main fs_sm mb-0 fw-normal pt-2 lh_150">Contrary to popular belief, Lorem Ipsum is
+                            not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                            College
                             in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                             passage, and going</p>
                     </div>
@@ -655,7 +658,7 @@
             <h2 class=" text-center ff_main fw-semibold fs_xl pt-3 pb-5 ">Frequently Asked Questions</h2>
             <div class="mw_860 mx-auto">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div data-aos="fade-down" class="accordion-item py_14">
+                    <div data-aos="fade-down" class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed ff_main fs_md fw-semibold" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
@@ -665,16 +668,16 @@
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body ff_main fs_sm fw-normal">At Cleauv Media Inc, we pride ourselves
-                                on our holistic approach to creative services and marketing. We offer a comprehensive
-                                suite of services, including web build, branding, content creation, paid advertising,
-                                and business
+                            <div class="accordion-body ff_main fs_sm fw-normal lh_150">At Cleauv Media Inc, we pride
+                                ourselves on our holistic approach to creative services and marketing. We offer a
+                                comprehensive suite of services, including web build, branding, content creation, paid
+                                advertising, and business
                                 automation. Our team of experts combines creativity with strategic thinking to deliver
                                 tailored solutions that drive results for our clients.
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-down" class="accordion-item py_14">
+                    <div data-aos="fade-down" class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed ff_main fs_md fw-semibold" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
@@ -684,15 +687,15 @@
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body ff_main fs_sm fw-normal">At Cleauv Media Inc, we pride ourselves
-                                on our holistic approach to creative services and marketing. We offer a comprehensive
-                                suite of services, including web build, branding, content creation, paid advertising,
-                                and business
+                            <div class="accordion-body ff_main fs_sm fw-normal  lh_150">At Cleauv Media Inc, we pride
+                                ourselves on our holistic approach to creative services and marketing. We offer a
+                                comprehensive suite of services, including web build, branding, content creation, paid
+                                advertising, and business
                                 automation. Our team of experts combines creativity with strategic thinking to deliver
                                 tailored solutions that drive results for our clients.</div>
                         </div>
                     </div>
-                    <div data-aos="fade-down" class="accordion-item py_14">
+                    <div data-aos="fade-down" class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed ff_main fs_md fw-semibold" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
@@ -702,15 +705,15 @@
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body ff_main fs_sm fw-normal">At Cleauv Media Inc, we pride ourselves
-                                on our holistic approach to creative services and marketing. We offer a comprehensive
-                                suite of services, including web build, branding, content creation, paid advertising,
-                                and business
+                            <div class="accordion-body ff_main fs_sm fw-normal  lh_150">At Cleauv Media Inc, we pride
+                                ourselves on our holistic approach to creative services and marketing. We offer a
+                                comprehensive suite of services, including web build, branding, content creation, paid
+                                advertising, and business
                                 automation. Our team of experts combines creativity with strategic thinking to deliver
                                 tailored solutions that drive results for our clients.</div>
                         </div>
                     </div>
-                    <div data-aos="fade-down" class="accordion-item py_14">
+                    <div data-aos="fade-down" class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed ff_main fs_md fw-semibold" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapsFour" aria-expanded="false"
@@ -720,15 +723,15 @@
                         </h2>
                         <div id="flush-collapsFour" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body ff_main fs_sm fw-normal">At Cleauv Media Inc, we pride ourselves
-                                on our holistic approach to creative services and marketing. We offer a comprehensive
-                                suite of services, including web build, branding, content creation, paid advertising,
-                                and business
+                            <div class="accordion-body ff_main fs_sm fw-normal  lh_150">At Cleauv Media Inc, we pride
+                                ourselves on our holistic approach to creative services and marketing. We offer a
+                                comprehensive suite of services, including web build, branding, content creation, paid
+                                advertising, and business
                                 automation. Our team of experts combines creativity with strategic thinking to deliver
                                 tailored solutions that drive results for our clients.</div>
                         </div>
                     </div>
-                    <div data-aos="fade-down" class="accordion-item py_14">
+                    <div data-aos="fade-down" class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed ff_main fs_md fw-semibold" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
@@ -738,15 +741,15 @@
                         </h2>
                         <div id="flush-collapseFive" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body ff_main fs_sm fw-normal">At Cleauv Media Inc, we pride ourselves
-                                on our holistic approach to creative services and marketing. We offer a comprehensive
-                                suite of services, including web build, branding, content creation, paid advertising,
-                                and business
+                            <div class="accordion-body ff_main fs_sm fw-normal  lh_150">At Cleauv Media Inc, we pride
+                                ourselves on our holistic approach to creative services and marketing. We offer a
+                                comprehensive suite of services, including web build, branding, content creation, paid
+                                advertising, and business
                                 automation. Our team of experts combines creativity with strategic thinking to deliver
                                 tailored solutions that drive results for our clients.</div>
                         </div>
                     </div>
-                    <div data-aos="fade-down" class="accordion-item py_14">
+                    <div data-aos="fade-down" class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed ff_main fs_md fw-semibold" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
@@ -756,10 +759,10 @@
                         </h2>
                         <div id="flush-collapseSix" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body ff_main fs_sm fw-normal">At Cleauv Media Inc, we pride ourselves
-                                on our holistic approach to creative services and marketing. We offer a comprehensive
-                                suite of services, including web build, branding, content creation, paid advertising,
-                                and business
+                            <div class="accordion-body ff_main fs_sm fw-normal  lh_150">At Cleauv Media Inc, we pride
+                                ourselves on our holistic approach to creative services and marketing. We offer a
+                                comprehensive suite of services, including web build, branding, content creation, paid
+                                advertising, and business
                                 automation. Our team of experts combines creativity with strategic thinking to deliver
                                 tailored solutions that drive results for our clients.</div>
                         </div>
@@ -777,7 +780,7 @@
                     <p class="mb-0 fs_sm fw-normal ff_main footer_link pt-3 pb-1 lh_150">Ut ut at mus facilisi semper at
                         suscipit massa purus. Varius sed sollicitudin id aliquam hac tortor maecenas purus semper.</p>
                     <div class="d-flex align-items-center gap-3 pt-4">
-                        <a href="#https://twitter.com/i/flow/login?redirect_after_login=%2Fradialcode" target="_blank"
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fradialcode" target="_blank"
                             class="footer_svg"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="16" cy="16" r="16" fill="#FAFAFA" fill-opacity="0.15" />
@@ -787,7 +790,7 @@
                             </svg>
 
                         </a>
-                        <a href="#https://www.facebook.com/radialcode/" target="_blank" class="footer_svg"><svg
+                        <a href="https://www.facebook.com/radialcode/" target="_blank" class="footer_svg"><svg
                                 width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="16" cy="16" r="16" fill="#FAFAFA" fill-opacity="0.15" />
@@ -796,7 +799,7 @@
                                     fill="#FAFAFA" />
                             </svg>
                         </a>
-                        <a href="#https://www.instagram.com/radialcode/" target="_blank" class="footer_svg"><svg
+                        <a href="https://www.instagram.com/radialcode/" target="_blank" class="footer_svg"><svg
                                 width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="16" cy="16" r="16" fill="#FAFAFA" fill-opacity="0.15" />
@@ -899,14 +902,18 @@
                     settings: {
 
                         slidesToShow: 2,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
                     }
                 }, {
                     breakpoint: 575.5,
                     settings: {
                         dots: true,
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
                     }
                 }
 
@@ -918,6 +925,7 @@
             dots: false,
             infinite: true,
             speed: 300,
+            varibleWidth: true,
             centerMode: true,
             centerPadding: '540px',
             slidesToShow: 1,
@@ -925,14 +933,14 @@
             responsive: [{
                     breakpoint: 1499.5,
                     settings: {
-                        centerPadding: '270px',
+                        centerPadding: '300px',
                         slidesToShow: 1,
                         slidesToScroll: 1,
                     }
                 }, {
                     breakpoint: 1399.5,
                     settings: {
-                        centerPadding: '200px',
+                        centerPadding: '230px',
                         slidesToShow: 1,
                         slidesToScroll: 1,
                     }
@@ -946,18 +954,21 @@
                 }, {
                     breakpoint: 991.5,
                     settings: {
+                        centerPadding: '60px',
                         slidesToShow: 1,
                         slidesToScroll: 1,
                     }
                 }, {
                     breakpoint: 767.5,
                     settings: {
+                        centerPadding: '50px',
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }
                 }, {
                     breakpoint: 575.5,
                     settings: {
+                        centerPadding: '40px',
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }
@@ -972,7 +983,7 @@
             infinite: true,
             speed: 300,
             centerMode: true,
-            centerPadding: '200px',
+            centerPadding: '260px',
             slidesToShow: 1,
             slidesToScroll: 1,
             responsive: [{

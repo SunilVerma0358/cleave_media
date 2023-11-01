@@ -2,7 +2,7 @@
 const preloader = document.getElementById("preloader")
 setTimeout(() => {
     document.getElementById("preloder").classList.add("d-none");
-    document.body.classList.remove("overflow-hidden")
+    document.body.classList.remove("overflow_hidden")
 }, 2000)
 // back to top
 function backtotop() {
@@ -15,32 +15,31 @@ window.addEventListener("scroll", function () {
     } else {
         backtotop.style.display = "none"
     }
-})
+});
 //  navbar
 let a = document.getElementById("nav");
-let overflow = document.querySelector(".flow");
-let cross1 = document.querySelector(".cross-1");
-let cross2 = document.querySelector(".cross-2");
-let cross3 = document.querySelector(".cross-3");
+let overflow = document.querySelector(".overflow_hidden");
+let heroIcon = document.querySelector(".cross-bg")
 let cross4 = document.querySelector(".cross-4");
 let cross5 = document.querySelector(".cross-5");
 let cross6 = document.querySelector(".cross-6");
 let menuicon = document.querySelector("#menuIcon");
+let home = document.querySelector(".home");
 
 menuicon.addEventListener("click", function () {
     if (a.classList !== document.querySelector("right")) {
         a.classList.toggle("right");
-        overflow.classList.toggle("flow-hidden");
-        cross1.classList.toggle("cross-1");
-        cross2.classList.toggle("cross-2");
-        cross3.classList.toggle("cross-3")
+        overflow.classList.toggle("overflow_hidden");
+        cross4.classList.toggle("cross-1");
+        cross5.classList.toggle("cross-2");
+        cross6.classList.toggle("cross-3")
     }
 })
 
 function navbar2() {
     a.classList.toggle("right");
-    cross1.classList.toggle("cross-1");
-    cross2.classList.toggle("cross-2");
-    cross3.classList.toggle("d-none");
-    document.querySelector("body").classList.remove("flow-hidden");
+    overflow.classList.remove("overflow_hidden");
+    cross4.classList.toggle("cross-4");
+    cross5.classList.toggle("cross-5");
+    cross6.classList.toggle("cross-6");
 }

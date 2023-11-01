@@ -10,6 +10,14 @@
 
 /* common class */
 
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.flow_hidden {
+    overflow: hidden;
+}
+
 .custom_container {
     max-width: 1140 !important;
 }
@@ -28,6 +36,10 @@
 
 .border_top {
     border-top: 1px solid #4F4E4E;
+}
+
+.flex_grow {
+    flex-grow: 1;
 }
 
 
@@ -59,6 +71,10 @@
 
 
 /* max-min width */
+
+.mw_343 {
+    max-width: 343px;
+}
 
 .mw_460 {
     max-width: 460px;
@@ -200,6 +216,13 @@ nav ul li a:hover {
     background: #80765D;
 }
 
+.hero_icon {
+    width: 40px;
+    height: 46px;
+    background-color: black;
+    border-radius: 50px;
+}
+
 .cross-1 {
     rotate: 45deg;
     transition: .3s;
@@ -208,7 +231,7 @@ nav ul li a:hover {
 .cross-2 {
     position: relative;
     transition: .3s;
-    top: -80%;
+    top: -95%;
     rotate: -45deg;
 }
 
@@ -243,6 +266,8 @@ nav ul li a:hover {
     width: 0;
     height: 4px;
     bottom: -9px;
+    margin-top: 8px;
+    border-radius: 15px;
     left: 0;
     transition: all 300ms linear;
 }
@@ -260,13 +285,22 @@ nav ul li a:hover {
     mix-blend-mode: multiply;
 }
 
+.slick_slider .slick-track {
+    width: 100% !important;
+}
+
 
 /* postion */
 
 .hero_ellips {
+    width: 881px;
+    height: 83px;
+    border-radius: 881px;
+    background: var(--Linear, linear-gradient(125deg, #FFCF23 0%, #FFA723 100%));
+    filter: blur(239px);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 43%;
+    left: -3%;
     z-index: -2;
 }
 
@@ -475,36 +509,76 @@ nav ul li a:hover {
 /* relevent-work */
 
 .slick_slider_one .slick-center {
-    transform: scale(1.22);
-    width: 831.575px;
-    height: 700.369px;
+    transform: scale(1.1);
+    width: 600.575px;
+    height: 570.369px;
+    border-radius: 15px;
 }
 
-.slick_slider_one .slick-dots li button::before {
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0!important;
-    left: 50% !important;
-    width: 40px !important;
-    height: 11px !important;
-    content: ''!important;
-    text-align: center;
-    background-color: black !important;
-    border-radius: 34px;
-}
-
-.slick_slider_one .slick-dots li .slick-active button:before {
-    width: 57px !important;
-    height: 11px !important;
+.slick_slider_one .slick-slide {
+    margin-right: 20px !important;
+    margin-left: 10px !important;
+    margin-bottom: 15px;
 }
 
 .slick_slider_one .slick-dots {
-    display: flex !important;
-    gap: 20px !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
+    margin-top: 20px;
+    position: unset;
+}
+
+.slick_slider_one .slick-dots li.slick-active button:before {
+    width: 55px;
+    height: 11px;
+    opacity: 1;
+    color: var(--black-bg);
+    margin-left: -12px;
+}
+
+.slick_slider_one .slick-dots li {
+    width: 36px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.slick_slider_one .slick-dots li button:before {
+    height: 11px;
+    width: 31px;
+    background-color: var(--black-gray);
+    position: absolute;
+    left: 50%;
+    border-radius: 34px;
+    font-size: 0;
+    margin-left: -3px;
+}
+
+.slick_slider_one .slick-dots {
+    margin-top: 20px;
+    position: unset;
+}
+
+.slick_slider_one .slick-dots li.slick-active button:before {
+    width: 55px;
+    height: 11px;
+    opacity: 1;
+    color: var(--black-bg);
+    margin-left: -12px;
+}
+
+.slick_slider_one .slick-dots li {
+    width: 36px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.slick_slider_one .slick-dots li button:before {
+    height: 11px;
+    width: 31px;
+    background-color: var(--black-gray);
+    position: absolute;
+    left: 50%;
+    border-radius: 34px;
+    font-size: 0;
+    margin-left: -3px;
 }
 
 
@@ -517,16 +591,19 @@ nav ul li a:hover {
     border-radius: 5px;
     color: var(--black-gray);
     transition: .3s;
+    box-shadow: 5px 5px 0px 0px var(--black-gray);
 }
 
 .button-3:hover {
-    box-shadow: 5px 5px 0px 0px var(--black-gray);
+    border: 1px solid var(--black-gray);
+    box-shadow: unset;
 }
 
 
 /* services */
 
 .card_12 {
+    width: 100%;
     padding: 14px 32px;
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.30);
@@ -595,17 +672,21 @@ nav ul li a:hover {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.40);
     padding: 14px 32px;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.40);
 }
 
 .book_a_call:hover {
     border: 1px solid rgba(0, 0, 0, 0.40);
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.40);
+    box-shadow: unset;
+}
+
+.plans_section_card:hover .get_start_btn {
+    border: 2px solid#988353;
+    background: #FFF9E4;
 }
 
 .get_start_btn:hover {
-    border: 2px solid var(--BLACK, #3C3C3C);
-    background: #FFF9E4;
-    box-shadow: 5px 5px 0px 0px #3C3C3C;
+    box-shadow: 5px 5px 0px 0px #988353;
 }
 
 
@@ -616,6 +697,11 @@ nav ul li a:hover {
     padding: 12px 23px;
     border-radius: 39px;
     background: rgba(255, 255, 255, 0.20);
+    transition: all linear 0.3s;
+}
+
+.add_one:hover {
+    border: 1px solid white;
 }
 
 
@@ -633,31 +719,40 @@ nav ul li a:hover {
     box-shadow: 10px 10px 0px 0px #FFCF23;
 }
 
-.slider_bussiness .slick-dots li button::before {
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0!important;
-    left: 50% !important;
-    width: 40px !important;
-    height: 11px !important;
-    content: ''!important;
-    text-align: center;
-    background-color: black !important;
-    border-radius: 34px;
-}
-
-.slider_bussiness .slick-dots li .slick-active button:before {
-    width: 57px !important;
-    height: 11px !important;
+.slider_bussiness .slick-slide {
+    margin-right: 20px !important;
+    margin-left: 10px !important;
+    margin-bottom: 15px;
 }
 
 .slider_bussiness .slick-dots {
-    display: flex !important;
-    gap: 20px !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
+    margin-top: 20px;
+    position: unset;
+}
+
+.slider_bussiness .slick-dots li.slick-active button:before {
+    width: 55px;
+    height: 11px;
+    opacity: 1;
+    color: var(--black-bg);
+    margin-left: -12px;
+}
+
+.slider_bussiness .slick-dots li {
+    width: 36px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.slider_bussiness .slick-dots li button:before {
+    height: 11px;
+    width: 31px;
+    background-color: var(--black-gray);
+    position: absolute;
+    left: 50%;
+    border-radius: 34px;
+    font-size: 0;
+    margin-left: -3px;
 }
 
 
@@ -689,6 +784,7 @@ nav ul li a:hover {
 
 .accordion {
     --bs-accordion-bg: var(--bg-accordion) !important;
+    --bs-accordion-btn-icon-width: 40px !important;
 }
 
 .accordion-button {
@@ -753,9 +849,8 @@ ul li a {
         justify-content: space-between;
         flex-direction: column;
         z-index: 4;
-        background: var(--black-gray);
-        border-radius: 50px;
         align-items: center;
+        border-radius: 37px;
     }
     label[id="menuIcon"]>span {
         width: 100%;
@@ -809,7 +904,7 @@ ul li a {
     /* position-hero */
     .hero_ellips {
         position: absolute;
-        top: 0;
+        top: 33%;
         left: 0;
         z-index: -2;
     }
@@ -936,9 +1031,20 @@ ul li a {
         bottom: 7%;
         right: -8%;
     }
+    .card_12 {
+        padding: 14px 18px;
+    }
 }
 
 @media (min-width:767.5px) {
+    .card_12 {
+        padding: 14px 32px;
+    }
+    .slick_slider_one .slick-center {
+        width: 750.575px;
+        height: 650.369px;
+        transform: scale(1.15);
+    }
     .get_start_btn {
         padding: 16px 50px;
     }
@@ -1020,8 +1126,15 @@ ul li a {
 }
 
 @media (min-width:991.5px) {
+    .card_12 {
+        padding: 14px 18px;
+    }
     .get_start_btn {
         padding: 16px 50px;
+    }
+    .slick_slider_one .slick-center {
+        width: 831.575px;
+        height: 700.369px;
     }
     /* position */
     .group_img {
@@ -1050,8 +1163,8 @@ ul li a {
     }
     .hero_ellips {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 44%;
+        left: 23%;
         z-index: -2;
     }
     .hero_blue {
@@ -1187,5 +1300,8 @@ ul li a {
         position: absolute;
         bottom: 7%;
         right: 0;
+    }
+    .card_12 {
+        padding: 14px 32px;
     }
 }

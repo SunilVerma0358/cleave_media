@@ -3,6 +3,7 @@
     /* font-size  */
     --fs-sm: 14px;
     --fs-md: 18px;
+    --fs-md2: 16px;
     --fs-lg: 16px;
     --fs-xl: 32px;
     --fs-xxl: 28px;
@@ -67,6 +68,10 @@
     font-size: var(--fs-md);
 }
 
+.fs_md2 {
+    font-size: var(--fs-md2);
+}
+
 .fs_lg {
     font-size: var(--fs-lg);
 }
@@ -103,6 +108,7 @@
         /* font-size  */
         --fs-sm: 14px;
         --fs-md: 16px;
+        --fs-md2: 16px;
         --fs-lg: 24px;
         --fs-xl: 32px;
         --fs-xxl: 38px;
@@ -127,6 +133,7 @@
         /* font-size  */
         --fs-sm: 16px;
         --fs-md: 20px;
+        --fs-md2: 21px;
         --fs-lg: 24px;
         --fs-xl: 42px;
         --fs-xxl: 44px;
