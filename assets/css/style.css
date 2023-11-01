@@ -608,6 +608,7 @@ nav ul li a:hover {
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 .card_12:hover {
@@ -672,12 +673,11 @@ nav ul li a:hover {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.40);
     padding: 14px 32px;
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.40);
 }
 
 .book_a_call:hover {
     border: 1px solid rgba(0, 0, 0, 0.40);
-    box-shadow: unset;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.40);
 }
 
 .plans_section_card:hover .get_start_btn {
@@ -777,6 +777,11 @@ nav ul li a:hover {
     background-image: unset !important;
 }
 
+.show.accordion-button::after {
+    background-image: unset !important;
+    transform: rotate(90deg) !important;
+}
+
 .accordion-button:not(.collapsed)::after {
     background-image: unset !important;
     transform: var(--bs-accordion-btn-icon-transform);
@@ -789,6 +794,11 @@ nav ul li a:hover {
 
 .accordion-button {
     background-color: var(--bg-accordion) !important;
+    padding: 16px 20px 16px 20px !important;
+}
+
+.accordion-body {
+    padding: 0px 20px 16px 20px !important;
 }
 
 
