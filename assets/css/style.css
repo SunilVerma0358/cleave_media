@@ -164,7 +164,6 @@
     border: 1px solid transparent;
     background-color: var(--yellow);
     border-radius: 2px;
-    /* transform: rotate(270deg); */
     transition: all linear 0.3s !important;
 }
 
@@ -307,7 +306,7 @@ nav ul li a:hover {
 .hero_blue {
     position: absolute;
     top: 11%;
-    left: 0;
+    left: -5%;
 }
 
 .svg_red {
@@ -690,7 +689,7 @@ nav ul li a:hover {
 }
 
 
-/*  */
+/*add one  */
 
 .add_one {
     border: 1px solid transparent;
@@ -740,7 +739,7 @@ nav ul li a:hover {
 
 .slider_bussiness .slick-dots li {
     width: 36px;
-    margin-left: 7px;
+    margin-left: 5px;
     margin-right: 7px;
 }
 
@@ -752,7 +751,7 @@ nav ul li a:hover {
     left: 50%;
     border-radius: 34px;
     font-size: 0;
-    margin-left: -3px;
+    margin-left: -1px;
 }
 
 
@@ -775,11 +774,6 @@ nav ul li a:hover {
 
 .accordion-button::after {
     background-image: unset !important;
-}
-
-.show.accordion-button::after {
-    background-image: unset !important;
-    transform: rotate(90deg) !important;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -921,7 +915,7 @@ ul li a {
     .hero_blue {
         position: absolute;
         top: 10%;
-        left: 0;
+        left: -4%;
     }
     .svg_red {
         position: absolute;
@@ -1180,7 +1174,7 @@ ul li a {
     .hero_blue {
         position: absolute;
         top: 25%;
-        left: 0;
+        left: -3%;
         z-index: -1;
     }
     .svg_red {
@@ -1298,6 +1292,9 @@ ul li a {
     .border_bottom_nav {
         border-bottom: unset;
         min-width: unset;
+    }
+    .slider_card {
+        max-width: 900px;
     }
 }
 
