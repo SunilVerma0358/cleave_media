@@ -892,10 +892,10 @@ ul li a {
         padding: 54px 58px 53px 58px;
     }
     .accordion-button::after {
-        background-image: url('../image/accordion_icon.png') !important;
+        background-image: url('../image/accordion_icon.webp') !important;
     }
     .accordion-button:not(.collapsed)::after {
-        background-image: url('../image/accordion_icon.png') !important;
+        background-image: url('../image/accordion_icon.webp') !important;
         transform: var(--bs-accordion-btn-icon-transform);
     }
     .plans_section_card {
